@@ -1,0 +1,5 @@
+This is the note of DBMS.
+DBMS stands for Data Base Management System
+It is used to store data in well manared form.
+We can access data easily just by searching the data.
+In DBMS,we can easily manipulate with the data.

@@ -1,0 +1,14 @@
+a=int(input("Enter first number: "))
+
+if a<=1:
+    print(f'{a} is not a prime number')
+else:
+    is_prime=True
+    for i in range(2,int(a**0.5)+1):
+        if a%i==0:
+            is_prime=False
+            break
+    if is_prime:
+        print(f'{a} is a prime number')
+    else:
+        print(f'{a} is not a prime number')

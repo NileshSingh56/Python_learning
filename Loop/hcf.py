@@ -1,9 +1,10 @@
-a=int(input("Enter first number: "))
-b=int(input("Enter second number: "))
-smaller=min(a,b)
-hcf=1
-for i in range(1,smaller+1,1):
-    if a%i==0 and b%i==0:
-        hcf=i
-        break
-print("HCF is:",hcf)
+a = abs(int(input("Enter first number: ")))
+b = abs(int(input("Enter second number: ")))
+
+if a == 0 and b == 0:
+    print("HCF is undefined for 0 and 0")
+else:
+    while b != 0:
+        a, b = b, a % b
+
+    print("HCF is:", a)
